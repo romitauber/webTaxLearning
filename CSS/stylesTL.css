@@ -182,6 +182,7 @@ ul {
     font-family: var(--titulos); 
 }
 
+
 .subtitulo {
     font-family: var(--subtitulos);
     font-weight: 400;
@@ -247,6 +248,7 @@ ul {
         height: 15rem;
         text-align: left;
     }
+  
     
     .subtitulo {
         text-align: left;
@@ -559,3 +561,46 @@ footer {
 .contenido {
     font-family: var(--subtitulos);
 }
+
+/* FORMULARIO */
+
+.contenedor-formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulario {
+    max-width: auto;
+    text-align: center;
+    margin: 5rem auto;
+    font-family: var(--titulos);
+    padding: 3rem;
+}
+
+@media (min-width:768px) {
+.contenedor-formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5rem;
+}
+
+.formulario {
+    max-width: 60rem;
+    
+}
+}
+
+
+.contenedor-formulario img {
+    max-width: 40rem;
+    align-self: center;
+}
+
+
+.formulario input {
+    width: 40rem;
+}
+
+
+
